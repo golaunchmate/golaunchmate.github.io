@@ -1,1 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaunchMate Dashboard - ZIP Launchpad Management Tools</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #263051 0%, #394260 50%, #5473C6 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            color: #E2E7FD;
+        }
+        .header h1 {
+            font-size: 48px;
+            font-weight: 300;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .header .tagline {
+            font-size: 18px;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .tool-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+        }
+        .tool-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+        .tool-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #263051;
+            margin-bottom: 10px;
+        }
+        .tool-description {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .tool-meta {
+            font-size: 12px;
+            color: #999;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+            margin-top: 15px;
+        }
+        .status-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .status-active {
+            background-color: #e6ffe6;
+            color: #006600;
+        }
+        .status-beta {
+            background-color: #e6f3ff;
+            color: #0066cc;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            color: #E2E7FD;
+            opacity: 0.7;
+            font-size: 14px;
+        }
+        .coming-soon {
+            opacity: 0.6;
+            position: relative;
+        }
+        .coming-soon::after {
+            content: "Coming Soon";
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #C5CBEB;
+            color: #263051;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 LaunchMate Dashboard</h1>
+            <div class="tagline">Automated Management Tools for ZIP Launchpad</div>
+        </div>
 
+        <div class="tools-grid">
+            <!-- Erica Summarizer Tool -->
+            <a href="https://golaunchmate.github.io/erica-summarizer" class="tool-card">
+                <div class="tool-icon">📊</div>
+                <div class="tool-title">Team Summary Report</div>
+                <div class="tool-description">
+                    Comprehensive status updates for all 19+ ZIP Launchpad startup teams. View progress, blockers, wins, and support needs organized by team.
+                </div>
+                <div class="tool-meta">
+                    <strong>For:</strong> Program Managers (Erica)<br>
+                    <strong>Updates:</strong> On-demand via agent triggers
+                    <span class="status-badge status-active">✓ Active</span>
+                </div>
+            </a>
+
+            <!-- Jordyn Update Tool -->
+            <a href="https://golaunchmate.github.io/jordyn-update" class="tool-card">
+                <div class="tool-icon">🔔</div>
+                <div class="tool-title">Check-In Alert System</div>
+                <div class="tool-description">
+                    Identifies founders who haven't checked in for 14+ days. Provides prioritized follow-up list with context and recommended actions.
+                </div>
+                <div class="tool-meta">
+                    <strong>For:</strong> Community Managers (Jordyn)<br>
+                    <strong>Updates:</strong> Automated weekly scans
+                    <span class="status-badge status-active">✓ Active</span>
+                </div>
+            </a>
+
+            <!-- Placeholder for Future Tool -->
+            <div class="tool-card coming-soon">
+                <div class="tool-icon">📈</div>
+                <div class="tool-title">Analytics Dashboard</div>
+                <div class="tool-description">
+                    Track cohort-wide metrics, engagement patterns, and program effectiveness. Visualize trends across all startup teams.
+                </div>
+                <div class="tool-meta">
+                    <strong>For:</strong> Program Leadership<br>
+                    <strong>Updates:</strong> Real-time data aggregation
+                </div>
+            </div>
+
+            <!-- Placeholder for Future Tool -->
+            <div class="tool-card coming-soon">
+                <div class="tool-icon">🎯</div>
+                <div class="tool-title">Resource Connector</div>
+                <div class="tool-description">
+                    Match founders' specific needs with ZIP Launchpad mentors, SDSU resources, and domain experts automatically.
+                </div>
+                <div class="tool-meta">
+                    <strong>For:</strong> All Team Members<br>
+                    <strong>Updates:</strong> AI-powered matching
+                </div>
+            </div>
+
+            <!-- Placeholder for Future Tool -->
+            <div class="tool-card coming-soon">
+                <div class="tool-icon">🏆</div>
+                <div class="tool-title">Wins & Milestones</div>
+                <div class="tool-description">
+                    Celebrate team achievements and track milestone completion across the cohort. Share success stories and learnings.
+                </div>
+                <div class="tool-meta">
+                    <strong>For:</strong> Marketing & Community<br>
+                    <strong>Updates:</strong> Real-time celebrations
+                </div>
+            </div>
+
+            <!-- Placeholder for Future Tool -->
+            <div class="tool-card coming-soon">
+                <div class="tool-icon">💬</div>
+                <div class="tool-title">Agent Communication Hub</div>
+                <div class="tool-description">
+                    Central interface for agent-to-agent coordination, shared learnings, and cross-team pattern recognition.
+                </div>
+                <div class="tool-meta">
+                    <strong>For:</strong> LaunchMate Agent Network<br>
+                    <strong>Updates:</strong> Continuous coordination
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Powered by LaunchMate Agent Intelligence System</p>
+            <p style="margin-top: 10px; font-size: 12px;">
+                Built for ZIP Launchpad at San Diego State University
+            </p>
+        </div>
+    </div>
+</body>
+</html>
