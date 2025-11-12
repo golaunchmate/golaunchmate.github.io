@@ -127,6 +127,56 @@
             font-size: 12px;
             font-weight: bold;
         }
+        /* Mega card styles for GitHub Pages Documentation */
+        .mega-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            display: block;
+            cursor: default;
+        }
+        .mega-card:hover {
+            transform: none;
+        }
+        .guide-links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 20px;
+        }
+        .guide-link {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #263051;
+            transition: background 0.2s ease, transform 0.2s ease;
+            border-left: 4px solid #5473C6;
+        }
+        .guide-link:hover {
+            background: #e9ecef;
+            transform: translateX(5px);
+        }
+        .guide-link-icon {
+            font-size: 24px;
+            margin-right: 15px;
+        }
+        .guide-link-content {
+            flex: 1;
+        }
+        .guide-link-title {
+            font-weight: bold;
+            font-size: 16px;
+            color: #263051;
+            margin-bottom: 4px;
+        }
+        .guide-link-desc {
+            font-size: 12px;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -167,6 +217,21 @@
                 </div>
             </a>
 
+            <!-- Craig Founders Tool -->
+            <a href="https://golaunchmate.github.io/craig-founders/" class="tool-card" target="_blank" rel="noopener noreferrer">
+                <div class="tool-icon">👨‍💻</div>
+                <div class="tool-title">Craig's Founder Hub</div>
+                <div class="tool-subtitle">craig-founders</div>
+                <div class="tool-description">
+                    Multi-purpose information display for Craig. View various insights, data visualizations, and analysis tailored for founder support and mentorship activities.
+                </div>
+                <div class="tool-meta">
+                    <strong>For:</strong> LaunchMate Team (Craig)<br>
+                    <strong>Updates:</strong> Dynamic content display
+                    <span class="status-badge status-active">✓ Active</span>
+                </div>
+            </a>
+
             <!-- User Value Survey Tool -->
             <a href="https://golaunchmate.github.io/user-value-survey/" class="tool-card" target="_blank" rel="noopener noreferrer">
                 <div class="tool-icon">💡</div>
@@ -196,6 +261,48 @@
                     <span class="status-badge status-active">✓ Active</span>
                 </div>
             </a>
+
+            <!-- GitHub Pages Documentation Mega Card -->
+            <div class="mega-card">
+                <div class="tool-icon">📚</div>
+                <div class="tool-title">GitHub Pages Documentation</div>
+                <div class="tool-subtitle">Documentation Suite</div>
+                <div class="tool-description">
+                    Complete documentation for using GitHub Pages automation in LaunchMate. From beginner quick-starts to technical implementation details.
+                </div>
+                
+                <div class="guide-links">
+                    <a href="https://golaunchmate.github.io/github-pages-mini-guide/" class="guide-link" target="_blank" rel="noopener noreferrer">
+                        <div class="guide-link-icon">⚡</div>
+                        <div class="guide-link-content">
+                            <div class="guide-link-title">Quick Start Mini Guide</div>
+                            <div class="guide-link-desc">5-minute setup: Turn agent output into shareable URLs</div>
+                        </div>
+                    </a>
+                    
+                    <a href="https://golaunchmate.github.io/github-pages-guide/" class="guide-link" target="_blank" rel="noopener noreferrer">
+                        <div class="guide-link-icon">📖</div>
+                        <div class="guide-link-content">
+                            <div class="guide-link-title">Full Guide - The Real Story</div>
+                            <div class="guide-link-desc">Complete walkthrough from frustration to automation</div>
+                        </div>
+                    </a>
+                    
+                    <a href="https://golaunchmate.github.io/github-pages-technical-guide/" class="guide-link" target="_blank" rel="noopener noreferrer">
+                        <div class="guide-link-icon">🔧</div>
+                        <div class="guide-link-content">
+                            <div class="guide-link-title">Technical Implementation Details</div>
+                            <div class="guide-link-desc">Code examples and developer-focused documentation</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="tool-meta">
+                    <strong>For:</strong> All LaunchMate Users<br>
+                    <strong>Purpose:</strong> Self-service automation tutorials
+                    <span class="status-badge status-active">✓ Active</span>
+                </div>
+            </div>
 
             <!-- Placeholder for Future Tool -->
             <div class="tool-card coming-soon">
